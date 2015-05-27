@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<p>sdfsdfdsf</p>
+</body>
+
+<!-- s -->
+<script src="js/sea.js"></script>
+
+<script>
+seajs.config({
+  base:'./modules/',
+  alias:{}
+});
+
+seajs.use(['all/a','all/b'], function(a, b) {
+	alert(a);
+	alert(b);
+});
+
+</script>
+<!--end s -->
+
+</html>
